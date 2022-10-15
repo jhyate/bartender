@@ -1,6 +1,3 @@
-## Table of Contents
-1. [Información general](#general-info)
-2. [Documentación](#documentación)
 ### Información general
 ***
 Proyecto que contiene el desarrollo de una prueba técnica cuya cuál consiste:
@@ -33,3 +30,13 @@ Este script lo puedes encontrar en los **recursos** del proyecto dentro de la ca
 ***
 * swagger: http://localhost:8080/swagger-ui.html 
 * Javadoc: http://localhost:5500/doc/index.html
+
+## Construido con
+***
+* [Java 8](https://docs.oracle.com/javase/8/docs/api/) - Lenguaje de programación
+* [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal) - Framework para creación de aplicaciones de simple ejecución
+* [Maven](https://maven.apache.org/) - Manejador de dependencias
+
+## Autor ✒️
+
+* **Jose Yate** - *Trabajo y Documentación Inicial* - [jhyate@modusoftware.com](mailto:jhyate@modusoftware.com)
