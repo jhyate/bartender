@@ -46,3 +46,12 @@ ALTER TABLE `arrays`
 ALTER TABLE `arrays`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+--
+-- Usuario creado para la gestion de la BD
+--
+CREATE USER 'NOMBRE_USER'@'%' IDENTIFIED WITH mysql_native_password BY 'PASSWORD_USER';
+
+--
+-- Privilegios que se le dieron al usuario
+--
+GRANT ALL PRIVILEGES ON NOMBRE_BD.* TO 'NOMBRE_USER'@'%';
