@@ -28,8 +28,8 @@ Este script lo puedes encontrar en los **recursos** del proyecto dentro de la ca
 
 ## Documentación
 ***
-* swagger: http://localhost:8080/swagger-ui.html 
-* Javadoc: http://localhost:5500/doc/index.html
+* [swagger](https://swagger.io/): http://localhost:8080/swagger-ui.html 
+* [Javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html): http://localhost:5500/doc/index.html
 
 ## Construido con
 ***
@@ -37,6 +37,6 @@ Este script lo puedes encontrar en los **recursos** del proyecto dentro de la ca
 * [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal) - Framework para creación de aplicaciones de simple ejecución
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 
-## Autor ✒️
+## Autor
 
 * **Jose Yate** - *Trabajo y Documentación Inicial* - [jhyate@modusoftware.com](mailto:jhyate@modusoftware.com)
