@@ -1,6 +1,6 @@
 ### Información general
 ***
-Proyecto que contiene el desarrollo de una prueba técnica cuya cuál consiste:
+Proyecto que contiene el desarrollo de la siguiente prueba técnica:
 
 Eres un bar ténder del bar más famoso de tu ciudad. Hay un arreglo de vasos numerados que está
 representado por el arreglo A. Adicional se tiene un arreglo con números primos representado
