@@ -39,6 +39,7 @@ public class BartenderServiceTest {
 	public void testBartenderService_ok() {
 		Integer iteration = 3;
 		Long arrayId = 1l;
+		when(bartenderRepository.count()).thenReturn(5l);
 		when(bartenderRepository.findByInputArray(arrayId)).thenReturn("2,3,4,5,6,7");
 		ResponseDto response = bartenderService.operationBartender(iteration, arrayId);
 		assertEquals(HttpStatus.OK.value(), response.getStatus());
@@ -67,6 +68,7 @@ public class BartenderServiceTest {
 	public void testBartenderService_errorServiceInternal() {
 		Integer iteration = 3;
 		Long arrayId = 1l;
+		when(bartenderRepository.count()).thenReturn(5l);
 		when(bartenderRepository.findByInputArray(arrayId)).thenReturn("");
 		ResponseDto response = bartenderService.operationBartender(iteration, arrayId);
 		assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), response.getStatus());

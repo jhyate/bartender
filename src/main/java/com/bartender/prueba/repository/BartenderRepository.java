@@ -20,5 +20,5 @@ import com.bartender.prueba.entity.BartenderEntity;
 @Repository
 public interface BartenderRepository extends JpaRepository<BartenderEntity, Long> {
 	@Query("SELECT b.inputArray FROM BartenderEntity b WHERE b.id = :id")
-	String findByInputArray(@Param("id") Long id);
+	String findByInputArray(@Param("id") Long id);	
 }

@@ -70,13 +70,15 @@ public class BartenderServiceImpl implements BartenderService {
 		log.info("The parameters to validate are iteration {}, arrayId {}", iteration, arrayId);
 		ResponseDto response = new ResponseDto();
 		response.setStatus(HttpStatus.OK.value());
+		// se trae el conteo de datos para validar contra el parametro arrayId
+		Long count = bartenderRepository.count();
 
 		if (iteration == 0) {
 			response.setStatus(HttpStatus.BAD_REQUEST.value());
 			response.setReason("The number of iterations is not correct, it must be greater than 0");
-		} else if (arrayId == 0 || arrayId > 5) {
+		} else if (arrayId == 0 || arrayId > count) {
 			response.setStatus(HttpStatus.BAD_REQUEST.value());
-			response.setReason("The entered ID is not correct the ID must not be greater than 1 and less than 5");
+			response.setReason("The entered ID is not correct the ID must not be greater than 1 and less than " + count);
 		}
 
 		return response;
