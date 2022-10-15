@@ -26,6 +26,8 @@ respuesta.
 
 Este script lo puedes encontrar en los **recursos** del proyecto dentro de la carpeta sql (**bd.sql**).
 
+La solución de esta prueba contiene sus respectivas pruebas unitarias, documentación y lógica.
+
 ## Documentación
 ***
 * [swagger](https://swagger.io/): http://localhost:8080/swagger-ui.html 
