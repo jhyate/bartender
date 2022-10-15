@@ -1,6 +1,6 @@
 ## Table of Contents
 1. [Información general](#general-info)
-2. [Documentación](#documentacion)
+2. [Documentación](#documentación)
 ### Información general
 ***
 Proyecto que contiene el desarrollo de una prueba técnica cuya cuál consiste:
