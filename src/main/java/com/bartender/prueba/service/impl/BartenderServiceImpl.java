@@ -92,29 +92,32 @@ public class BartenderServiceImpl implements BartenderService {
 	 */
 	private List<Integer> getOperation(List<Integer> data, Integer iteration) {
 		List<Integer> p = getPrimeNumbers(iteration);
-		List<Integer> r = new ArrayList<>();
+		List<Integer> respuesta = new ArrayList<>();
 		List<Integer> a = new ArrayList<>();
+		List<Integer> b = new ArrayList<>();
 		for (int i = 0; i < iteration; i++) {
-			for (int t = 0; t < data.size(); t ++) {
-				if (data.get(t) % p.get(i) == 0) {
+			for (int t = 0; t < data.size(); t++) {
+				if (data.get(t) % p.get(i) == 0 && !b.contains(data.get(t))) {
 					log.info("this number is prime {}", data.get(t));
-					r.add(0, data.get(t));
+					b.add(0, data.get(t));
 					if (!a.isEmpty() && a.contains(data.get(t))) {
 						a.remove(a.indexOf(data.get(t)));
 					}
-					data.remove(t);
 				} else {
-					if (!a.contains(data.get(t))) {
+					if (!a.contains(data.get(t)) && !b.contains(data.get(t))) {
 						log.info("this number is not prime {}", data.get(t));
-						a.add(data.get(t));
+						a.add(0, data.get(t));
 					}					
 				}
 			}
 
 		}
-
-		r.addAll(a);
-		return r;
+		
+		log.info("prime numbers that are added to the response {}", b);
+		respuesta.addAll(b);
+		log.info("number not primes that are added to the response {}", a);
+		respuesta.addAll(a);
+		return respuesta;
 	}
 
 	/**
